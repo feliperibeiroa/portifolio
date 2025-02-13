@@ -7,6 +7,7 @@ import { tecnologias } from "./data/tecnologias";
 import { TecnologiaCard } from "./components/TecnologiaCard/TecnologiaCard";
 import { projetos } from "./data/projetos";
 import { ProjetosCard } from "./components/ProjetosCard/ProjetosCard";
+import MenuHamburguer from "./components/MenuHamburguer/MenuHamburguer";
 
 
 export default function Home() {
@@ -14,18 +15,19 @@ export default function Home() {
   
   return (
     <div className="w-full h-full flex items-center justify-center min-h-screen bg-[#3b0a35] p-5 text-white">
-    <div className="min-h-full flex flex-col shadow-2xl w-4/5 items-center bg-[#3b0a35] justify-center gap-5">
+    <div className="min-h-full flex flex-col shadow-2xl w-4/5 items-center p-5 bg-[#3b0a35] justify-center gap-5">
+    <MenuHamburguer/>
         <div className="flex flex-row justify-around mt-10 gap-5">
           <div className="flex flex-col w-1/3 text-center items-center justify-center gap-5">
-            <h1 className="text-4xl font-bold text-center">
+            <h1 className="text-4xl font-bold text-left">
               Felipe Ribeiro Tardochi Da Silva
             </h1>
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col text-left items-center justify-center">
               <p>
                 Olá, meu nome é Felipe Ribeiro Tardochi da Silva, sou desenvolvedor Fullstack.
               </p>
               <p>
-                Atualmente sou estudante de Análise e desenvolvimento de Sistemas na FIAP, indo para o quarto semestre, e estou em busca de uma oportunidade de estágio.
+                Atualmente sou estudante de Análise e desenvolvimento de Sistemas na FIAP, no terceiro semestre, e estou em busca de uma oportunidade de estágio.
               </p>
               <p>
                 Sou uma pessoa muito dedicada e esforçada, que busca sempre aprender mais e mais, para poder sempre agregar ao meu conhecimento.
