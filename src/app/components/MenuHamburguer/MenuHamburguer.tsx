@@ -1,18 +1,28 @@
 'use client'
-import Link from 'next/link';
-import React, { useState } from 'react'
+import Image from 'next/image';
 
-export default function MenuHamburguer() {
+import React, { useState } from 'react'
+import hamburguer from '../../public/hamburguer.svg';
+
+interface MenuHamburguerProps {
+    setConteudo: (conteudo: string) => void;
+}
+
+
+export default function MenuHamburguer({ setConteudo }: MenuHamburguerProps) {
 
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div onClick={()=>setIsOpen(!isOpen)} className='h-10 w-10 bg-red-800 flex flex-col justify-between items-center cursor-pointer'>
-            <div className={` ${isOpen ? 'backdrop-blur-sm':'hidden'} transition-transform duration-1000 absolute z-50 w-full h-full min-h-screen`}> 
-                <div className='flex flex-col h-full w-full items-center justify-center gap-5'>
-                    <div className='flex text-center flex-col h-3/5 gap-5'>
-                        <Link className='text-2xl font-bold ' href={"/"}>Inicio</Link>
-                        <Link className='text-2xl font-bold ' href={"/contato"}>Contato</Link>
+        <div>
+            <div onClick={() => setIsOpen(!isOpen)} className='flex flex-col justify-between items-center cursor-pointer'>
+                <Image onClick={() => setIsOpen(!isOpen)} src={hamburguer} alt='menu hamburguer' className=' invert' width={40} height={40}></Image>
+                <div className={` ${isOpen ? 'backdrop-blur-md' : 'hidden'} transition-transform duration-1000 fixed inset-0 z-50`}>
+                    <div className='flex flex-col h-full w-full items-center justify-center gap-5 bg-opacity-50'>
+                        <div className='flex text-center select-none flex-col h-3/5 gap-5'>
+                            <h1 onClick={()=>setConteudo('Principal')} className='text-2xl font-bold text-white'>Inicio</h1>
+                            <h1 onClick={()=>setConteudo('Contato')} className='text-2xl font-bold text-white'>Contato</h1>
+                        </div>
                     </div>
                 </div>
             </div>
