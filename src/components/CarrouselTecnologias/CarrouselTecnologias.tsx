@@ -1,6 +1,6 @@
 import React, {useEffect, useState } from 'react'
 
-import { tecnologias } from '@/app/_data/tecnologias'; 
+import { tecnologias } from '@/data/tecnologias'; 
 import { TecnologiaCard, TecnologiaProps } from '../TecnologiaCard/TecnologiaCard'; 
 
 export default function CarrouselTecnologias() {
