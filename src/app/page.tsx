@@ -3,10 +3,10 @@ import { useState } from "react";
 import MenuHamburguer from "./components/MenuHamburguer/MenuHamburguer";
 import Principal from "./components/Principal/Principal";
 import Image from "next/image";
-import imagem from "./public/eu.jpeg";
+import imagem from "../../images/eu.jpeg";
 import Links from "./components/Links/Links"; 
-import linkedin from './public/linkedin.png'
-import github from './public/github.png'
+import linkedin from '../../images/linkedin.png'
+import github from '../../images/github.png'
 
 
 export default function Home() {

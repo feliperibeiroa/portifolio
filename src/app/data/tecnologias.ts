@@ -1,14 +1,14 @@
 import { TecnologiaProps } from "../components/TecnologiaCard/TecnologiaCard";
-import reactIcon from "../public/react.svg";
-import TypescriptIcon from "../public/typescript.png";
-import JavaIcon from "../public/java.png";
-import PythonIcon from "../public/python.png";
-import HTMLIcon from "../public/html.png";
-import CSSIcon from "../public/css.png";
-import JavascriptIcon from "../public/javascript.png";
-import tailwindcssIcon from "../public/tailwindcss.png";
-import SQLIcon from "../public/sql.png";
-import FigmaIcon from "../public/figma.png";
+import reactIcon from "../../../images/react.svg";
+import TypescriptIcon from "../../../images/typescript.png";
+import JavaIcon from "../../../images/java.png";
+import PythonIcon from "../../../images/python.png";
+import HTMLIcon from "../../../images/html.png";
+import CSSIcon from "../../../images/css.png";
+import JavascriptIcon from "../../../images/javascript.png";
+import tailwindcssIcon from "../../../images/tailwindcss.png";
+import SQLIcon from "../../../images/sql.png";
+import FigmaIcon from "../../../images/figma.png";
 
 
 export const tecnologias : TecnologiaProps[] = [
