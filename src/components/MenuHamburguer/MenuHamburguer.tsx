@@ -2,7 +2,7 @@
 import Image from 'next/image';
 
 import React, { useState } from 'react'
-import hamburguer from '../../../../public/hamburguer.svg';
+import hamburguer from '../../../public/hamburguer.svg';
 
 interface MenuHamburguerProps {
     setConteudo: (conteudo: string) => void;
