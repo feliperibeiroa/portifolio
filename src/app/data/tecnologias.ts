@@ -18,6 +18,11 @@ export const tecnologias : TecnologiaProps[] = [
         alt: "React Icon"
     },
     {
+        nome: "React Native",
+        imagem: reactIcon,
+        alt: "React Icon"
+    },
+    {
         nome: "Typescript",
         imagem: TypescriptIcon,
         alt: "Typescript Icon"

@@ -14,7 +14,7 @@ export default function MenuHamburguer({ setConteudo }: MenuHamburguerProps) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div>
+        <div className='hidden'>
             <div onClick={() => setIsOpen(!isOpen)} className='flex flex-col justify-between items-center cursor-pointer'>
                 <Image onClick={() => setIsOpen(!isOpen)} src={hamburguer} alt='menu hamburguer' className=' invert' width={40} height={40}></Image>
                 <div className={` ${isOpen ? 'backdrop-blur-md' : 'hidden'} transition-transform duration-1000 fixed inset-0 z-50`}>
