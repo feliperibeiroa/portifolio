@@ -1,9 +1,9 @@
 
 import React from 'react'
 
-import { tecnologias } from '@/app/data/tecnologias'; 
+import { tecnologias } from '@/app/_data/tecnologias'; 
 import { TecnologiaCard } from '../TecnologiaCard/TecnologiaCard'; 
-import { projetos } from '@/app/data/projetos'; 
+import { projetos } from '@/app/_data/projetos'; 
 import { ProjetosCard } from '../ProjetosCard/ProjetosCard'; 
 
 

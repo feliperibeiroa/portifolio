@@ -1,4 +1,4 @@
-import { ProjetosCardProps } from "../components/ProjetosCard/ProjetosCard";
+import { ProjetosCardProps } from "../_components/ProjetosCard/ProjetosCard";
 import projeto1 from "../../../public/projeto1.png";
 import projeto2 from "../../../public/projeto2.png";
 

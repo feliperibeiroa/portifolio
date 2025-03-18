@@ -1,4 +1,4 @@
-import { TecnologiaProps } from "../components/TecnologiaCard/TecnologiaCard";
+import { TecnologiaProps } from "../_components/TecnologiaCard/TecnologiaCard";
 import reactIcon from "../../../public/react.svg";
 import TypescriptIcon from "../../../public/typescript.png";
 import JavaIcon from "../../../public/java.png";

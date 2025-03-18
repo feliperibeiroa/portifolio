@@ -1,10 +1,10 @@
 'use client';
 import { useState } from "react";
-import MenuHamburguer from "./components/MenuHamburguer/MenuHamburguer";
-import Principal from "./components/Principal/Principal";
+import MenuHamburguer from "./_components/MenuHamburguer/MenuHamburguer";
+import Principal from "./_components/Principal/Principal";
 import Image from "next/image";
 import imagem from "../../public/eu.jpeg";
-import Links from "./components/Links/Links"; 
+import Links from "./_components/Links/Links"; 
 import linkedin from '../../public/linkedin.png'
 import github from '../../public/github.png'
 
