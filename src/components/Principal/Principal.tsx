@@ -22,7 +22,7 @@ export default function Principal() {
 
       <div className="flex flex-col items-center justify-center gap-5 w-full">
         <h1 className="text-3xl font-bold">Projetos</h1>
-        <div className="flex flex-row max-cstm:flex-col gap-4 justify-center">
+        <div className="grid grid-cols-2 2xl:grid-cols-4 items-center justify-center gap-5 max-cstm:grid-cols-1">
           {projetos.map((projeto) => (
               <ProjetosCard
                 key={projeto.title}
